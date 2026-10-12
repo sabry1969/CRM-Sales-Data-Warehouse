@@ -1,0 +1,59 @@
+version: 2
+
+models:
+
+  - name: stg_accounts
+    columns:
+      - name: account
+        tests:
+          - not_null
+          - unique
+
+  - name: stg_products
+    columns:
+      - name: product
+        tests:
+          - not_null
+          - unique
+
+  - name: stg_sales_teams
+    columns:
+      - name: sales_agent
+        tests:
+          - not_null
+          - unique
+
+  - name: stg_sales_pipeline
+    columns:
+      - name: opportunity_id
+        tests:
+          - not_null
+          - unique
+
+  - name: dim_account
+    columns:
+      - name: account_key
+        tests:
+          - not_null
+          - unique
+
+  - name: dim_product
+    columns:
+      - name: product_key
+        tests:
+          - not_null
+          - unique
+
+  - name: dim_sales_agent
+    columns:
+      - name: sales_agent_key
+        tests:
+          - not_null
+          - unique
+
+  - name: fact_sales_opportunity
+    columns:
+      - name: opportunity_key
+        tests:
+          - not_null
+          - unique

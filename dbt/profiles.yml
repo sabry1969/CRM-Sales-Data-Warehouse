@@ -1,0 +1,8 @@
+crm_sales:
+  outputs:
+    dev:
+      type: duckdb
+      path: "{{ env_var('CRM_DB_PATH', '/usr/local/airflow/crm_sales/dbt/crm_sales/dev.duckdb') }}"
+      threads: 1
+
+  target: dev

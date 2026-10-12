@@ -1,0 +1,16 @@
+services:
+  scheduler:
+    volumes:
+      - ../:/usr/local/airflow/crm_sales
+
+  dag-processor:
+    volumes:
+      - ../:/usr/local/airflow/crm_sales
+
+  api-server:
+    volumes:
+      - ../:/usr/local/airflow/crm_sales
+
+  triggerer:
+    volumes:
+      - ../:/usr/local/airflow/crm_sales

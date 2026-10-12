@@ -1,0 +1,23 @@
+# Python
+airflow/dags/__pycache__/
+
+# Environment and local user configuration
+airflow/.env
+airflow/airflow_settings.yaml
+dbt/.user.yml
+
+# DuckDB
+dbt/crm_sales/dev.duckdb
+
+# dbt generated files
+dbt/crm_sales/target/
+dbt/crm_sales/logs/
+
+# Airflow generated files
+airflow/logs/
+
+# Temporary and backup files
+docs/.$Conceptual Schema.drawio.bkp
+docs/.$Conceptual_Schema.drawio.bkp
+docs/.$logical_schema.drawio.bkp
+docs/.$star schema.drawio.bkp
